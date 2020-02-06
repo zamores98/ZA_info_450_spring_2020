@@ -20,3 +20,5 @@ int main(){
     cout << "You entered 0, I'm out!" << endl;
     return 0;
   }
+
+I'm not sure how to do this
