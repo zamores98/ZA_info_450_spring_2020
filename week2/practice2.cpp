@@ -1,27 +1,24 @@
 #include <iostream>
     #include <cmath>
     using namespace std;
-    int main(){
-      int input_variable = -1;
-      bool is_prime = 0;
-      while (1) {
-        cout << "Please enter a number so I can determine if it's prime or not." << endl;
-        cin >> input_variable;
-        if (input_variable == 0){
-          break;
+    int main()
+    {
+        int number, x, y=0, z=0
+            cout << "Enter a number to check if it's Prime ";
+            cin >> number;
+        y=number/2
+        for(x = 2; x<=y; x++)
+        {
+            if(number % x ==0)
+            {
+                cout << "Not a Prime Number" << endl;
+                z=1;
+                break;
+            }
         }
-        is_prime = 1;
-        for (int x = 2;x < input_variable;x++){
-          if (input_variable % x == 0){
-            is_prime  = 0;
-          }
-        }
-        if (is_prime){
-          cout << input_variable << " IS a prime number!" << endl;
-        } else {
-          cout << input_variable << " is NOT prime number." << endl;
-        }
-      }
-      cout << "You entered 0, I'm out!" << endl;
-      return 0;
+        if(z==0)
+            cout << "That's a Prime number!" << endl;
+        return 0;
     }
+        
+
