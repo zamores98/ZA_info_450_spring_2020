@@ -2,8 +2,6 @@
     #include <cmath>
     using namespace std;
     float array(float data[]);
-    float mean;
-    float sum;
     int main()
     {
         int x;
