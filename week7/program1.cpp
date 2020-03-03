@@ -5,11 +5,22 @@ using namespace std;
 int main()
 {
   string userinput;
-  cout << "Please enter a string!:" << endl;
+  string again = "hello";
+  while (again.length() > 0)
+  {
+    
+  cout << "Please enter a string:" << endl;
   getline(cin,userinput);
-  cout<< "You entered:" << endl << userinput << endl;
+  
+  if (userinput.length() < 1)
+  return 0;
  
-  cout << "Here is your string in reverse!" << endl;
+  
+  else if (userinput.length() > 0)
+  cout << "You entered:" << endl << userinput << endl;
+  cout << "Here is your string in reverse:" << endl;
   reverse(userinput.begin(),userinput.end());
   cout << userinput<<endl;
+  }
+  return 0; 
 }
